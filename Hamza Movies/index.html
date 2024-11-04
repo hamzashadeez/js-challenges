@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Musics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 h-screen w-full">
+   <header class="h-[60px] bg-gray-700 shadow flex items-center px-6">
+    <h1 class="text-white font-bold text-2xl" >Hamza <span class="text-green-600">Musics</span></h1>
+   </header>
+
+   <main class="text-gray-400 w-full mx-5 md:max-w-6xl mt-8 md:mx-auto">
+    <form id="search-form" class="bg-gray-700 h-[60px] ">
+        <input type="text" class="h-full w-full px-5 bg-gray-700 outline-green-600" placeholder="Search music......" id="input">
+    </form>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8" id="music-container">
+        <!-- here is where the movies displays -->
+         
+    </div>
+   </main>
+    <script src="./js/application.js"></script>
+</body>
+</html>
