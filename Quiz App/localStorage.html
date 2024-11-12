@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lOCAL STORAGE</title>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+
+    <script>
+      var users = JSON.parse(localStorage.getItem("users") || "[]");
+      console.log(users);
+
+      function registerUser(user) {
+        users.push(user); // ["user1"]
+        localStorage.setItem("users", JSON.stringify(users));
+      }
+
+      function login (name, id) {
+        let signedUser = null;
+        
+        users.map((user) =>{
+            if(user.name === name && user.id === id){
+                signedUser = user;
+                console.log(user)
+            }
+        })
+
+        console.log(signedUser)
+      }
+
+
+      login("user3", 2)
+    </script>
+  </body>
+</html>

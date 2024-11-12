@@ -1,12 +1,20 @@
-const resetUI = () => {
-    
+const USERS =JSON.parse(localStorage.getItem("users") || "[]");
+
+
+const registerUser = (name, id)=>{
+   const idExist = USERS.find((user) => user.id === id)
+   if(idExist){
+      alert("User Id already exist");
+      return;
+   }
+   let newUser = {name, id}
+   localStorage.setItem("users", JSON.stringify(newUser))
 }
 
-const renderQuestions = ()=>{
-   
+
+const login = (name, id)=>{
+
 }
 
-window.onload = () => {
-   resetUI()
-}
-
+console.log(USERS)
+registerUser("hamza", 3)
