@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iman Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F3F4F6]">
+    <header
+      class="h-[150px] w-full flex flex-col justify-center items-center relative"
+    >
+      <span>
+        <img src="./img/logo.svg" alt="" srcset="" />
+        <h2 class="text-2xl font-bold text-center">Iman Quiz</h2>
+      </span>
+      <div class="flex absolute right-10 gap-2">
+        <button class="bg-black text-white py-1 text-sm rounded-md px-4">
+          Sign Up
+        </button>
+        <button class="bg-red-600 text-white py-1 text-sm rounded-md px-4">
+          Log Out
+        </button>
+      </div>
+    </header>
+
+    <main class="min-h-[70vh] overflow-y-auto flex items-center justify-center">
+      <!-- empty question -->
+      <!-- <div id="empty_question_component" class="flex flex-col items-center p-4 rounded-lg justify-center gap-3 w-52 h-44 border border-gray-600">
+            <h1 class="text-center font-bold">Please Sign Up to start the quiz</h1>
+            <button class="bg-black text-white py-1 text-sm rounded-md px-4">Sign Up</button>
+         
+        </div> -->
+      <!-- end empty question -->
+
+      <!-- question component -->
+      <section class="h-[50vh] w-[90%] md:w-[60%] relative">
+        <h1 class="font-semibold text-2xl" id="question_label">
+          Who is the first son of the prophet Yakub
+        </h1>
+        <ul class="px-4 mt-6 text-xl flex flex-col gap-4">
+          <li>
+            <input type="radio" name="imanquiz" id="" />
+            Yahuza
+          </li>
+          <li><input type="radio" name="imanquiz" id="" /> Hamza</li>
+          <li><input type="radio" name="imanquiz" id="" /> Bashir Designer</li>
+          <li><input type="radio" name="imanquiz" id="" /> Lawi</li>
+        </ul>
+        <div class="absolute bottom-16 right-10">
+          <button class="bg-black text-white py-1 text-sm rounded-md px-4">
+            Next
+          </button>
+        </div>
+      </section>
+      <!-- end question component -->
+    </main>
+  </body>
+</html>
